@@ -1,4 +1,4 @@
-{🏠 Housing Price Prediction – End-to-End ML Pipeline}
+*🏠 Housing Price Prediction – End-to-End ML Pipeline*
 
 This project demonstrates a real-world machine learning pipeline for predicting housing prices using Linear Regression and Random Forest, including feature engineering, model evaluation, best-model selection, and production-ready inference.
 
