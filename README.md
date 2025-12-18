@@ -5,6 +5,8 @@ This project demonstrates a real-world machine learning pipeline for predicting 
 The pipeline automatically selects the best performing model and applies the correct preprocessing during prediction.
 
 
+
+
 **🚀 Key Highlights**
 
 -End-to-end ML workflow (training → evaluation → inference)
@@ -20,6 +22,8 @@ The pipeline automatically selects the best performing model and applies the cor
 -Model-aware prediction (scaled vs unscaled inputs)
 
 -Clean separation of training and prediction logic
+
+
 
 
 **🧠 Machine Learning Approach**
@@ -41,19 +45,32 @@ The pipeline automatically selects the best performing model and applies the cor
 -The model with the highest R² score is automatically selected and saved.
 
 
+
+
 **🔧 Feature Engineering**
 
 The following engineered features are used to capture real-world pricing behavior:
 
-**Feature	**                                 
--amenities_score	                          
--area_location_interaction	                
+
+**Feature	**    
+
+-amenities_score	
+
+-area_location_interaction	 
+
 -amenities_environment_interaction
 
+
+
 **Description**
+
 -Sum of parking, AC, and guestroom
+
 -Area × Location score
+
 -Amenities × Environment score
+
+
 
 
 **Why Interaction Features Matter**
@@ -63,6 +80,8 @@ The following engineered features are used to capture real-world pricing behavio
 -A large house in a good location is far more valuable than a large house in a poor location.
 
 -Random Forest models learn such patterns naturally, which is why these features often rank highly in feature importance.
+
+
 
 
 
@@ -78,6 +97,8 @@ Housing-Price-Prediction/
 │   └── userInput.csv
 ├── README.md
 └── requirements.txt
+
+
 
 
 **🏗️ Training Pipeline**
@@ -96,13 +117,20 @@ Evaluate performance
 
 Save the best model with metadata
 
+
+
 **Run Training:**
 
 python train.py
 
+
+
 **This generates:**
 
 best_model.pkl
+
+
+
 
 **🔮 Prediction Pipeline**
 
@@ -117,6 +145,8 @@ Ensures feature order consistency
 Produces reliable predictions
 
 
+
+
 **Run Prediction**
 python predict.py
 
@@ -124,6 +154,9 @@ python predict.py
 Example:
 
 preds = predict_price("./Data/userInput.csv")
+
+
+
 
 
 **🧩 Model Metadata (Production-Grade)**
@@ -139,6 +172,8 @@ preds = predict_price("./Data/userInput.csv")
 
 
 This guarantees training–inference consistency.
+
+
 
 
 
@@ -168,6 +203,8 @@ This guarantees training–inference consistency.
 
 
 
+
+
 **📌 Future Improvements**
 
 -Cross-validation
@@ -179,6 +216,8 @@ This guarantees training–inference consistency.
 -FastAPI inference API
 
 -Model monitoring & logging
+
+
 
 
 **🎯 Interview-Ready Summary**
