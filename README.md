@@ -85,6 +85,7 @@ The following engineered features are used to capture real-world pricing behavio
 
 
 
+
 **📂 Project Structure**
 
 Housing-Price-Prediction/
@@ -97,6 +98,7 @@ Housing-Price-Prediction/
 │   └── userInput.csv
 ├── README.md
 └── requirements.txt
+
 
 
 
@@ -119,15 +121,18 @@ Save the best model with metadata
 
 
 
+
 **Run Training:**
 
 python train.py
 
 
 
+
 **This generates:**
 
 best_model.pkl
+
 
 
 
@@ -143,6 +148,7 @@ Applies scaling only if required
 Ensures feature order consistency
 
 Produces reliable predictions
+
 
 
 
@@ -171,6 +177,7 @@ preds = predict_price("./Data/userInput.csv")
 }
 
 
+
 This guarantees training–inference consistency.
 
 
@@ -188,6 +195,7 @@ This guarantees training–inference consistency.
 -No scaling required
 
 -Linear Regression is still included as a strong baseline model.
+
 
 
 
@@ -216,6 +224,7 @@ This guarantees training–inference consistency.
 -FastAPI inference API
 
 -Model monitoring & logging
+
 
 
 
