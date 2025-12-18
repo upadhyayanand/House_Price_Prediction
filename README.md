@@ -87,11 +87,86 @@ Evaluate performance
 
 Save the best model with metadata
 
-*Run Training*
+**Run Training:**
 
 python train.py
 
-*This generates*
+**This generates:**
 
 best_model.pkl
 
+**🔮 Prediction Pipeline**
+
+The prediction system:
+
+Detects which model was selected
+
+Applies scaling only if required
+
+Ensures feature order consistency
+
+Produces reliable predictions
+
+**Run Prediction**
+python predict.py
+
+
+Example:
+
+preds = predict_price("./Data/userInput.csv")
+
+
+**🧩 Model Metadata (Production-Grade)**
+
+-Each saved model includes:
+
+{
+  "model_type": "random_forest" or "linear_regression",
+  "model": trained_model,
+  "scaler": scaler_or_None,
+  "features": feature_columns
+}
+
+
+This guarantees training–inference consistency.
+
+
+**📊 Why Random Forest Often Wins**
+
+-Learns non-linear relationships
+
+-Handles feature interactions naturally
+
+-Robust to outliers
+
+-No scaling required
+
+-Linear Regression is still included as a strong baseline model.
+
+
+**🛠️ Tech Stack**
+
+-Python
+
+-Pandas, NumPy
+
+-Scikit-learn
+
+-Joblib
+
+**📌 Future Improvements**
+
+-Cross-validation
+
+-Hyperparameter tuning
+
+-Sklearn Pipelines
+
+-FastAPI inference API
+
+-Model monitoring & logging
+
+
+**🎯 Interview-Ready Summary**
+
+“This project implements a production-ready ML pipeline that compares linear and tree-based models, selects the best performer automatically, and ensures correct preprocessing during inference using saved metadata.”
