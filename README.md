@@ -4,6 +4,7 @@ This project demonstrates a real-world machine learning pipeline for predicting 
 
 The pipeline automatically selects the best performing model and applies the correct preprocessing during prediction.
 
+
 **🚀 Key Highlights**
 
 -End-to-end ML workflow (training → evaluation → inference)
@@ -39,14 +40,21 @@ The pipeline automatically selects the best performing model and applies the cor
 
 -The model with the highest R² score is automatically selected and saved.
 
+
 **🔧 Feature Engineering**
 
 The following engineered features are used to capture real-world pricing behavior:
 
-**Feature	**                                  ** Description**
--amenities_score	                          -Sum of parking, AC, and guestroom
--area_location_interaction	                -Area × Location score
--amenities_environment_interaction	       - Amenities × Environment score
+**Feature	**                                 
+-amenities_score	                          
+-area_location_interaction	                
+-amenities_environment_interaction
+
+**Description**
+-Sum of parking, AC, and guestroom
+-Area × Location score
+-Amenities × Environment score
+
 
 **Why Interaction Features Matter**
 
@@ -70,6 +78,7 @@ Housing-Price-Prediction/
 │   └── userInput.csv
 ├── README.md
 └── requirements.txt
+
 
 **🏗️ Training Pipeline**
 
@@ -107,6 +116,7 @@ Ensures feature order consistency
 
 Produces reliable predictions
 
+
 **Run Prediction**
 python predict.py
 
@@ -131,6 +141,7 @@ preds = predict_price("./Data/userInput.csv")
 This guarantees training–inference consistency.
 
 
+
 **📊 Why Random Forest Often Wins**
 
 -Learns non-linear relationships
@@ -144,6 +155,7 @@ This guarantees training–inference consistency.
 -Linear Regression is still included as a strong baseline model.
 
 
+
 **🛠️ Tech Stack**
 
 -Python
@@ -153,6 +165,8 @@ This guarantees training–inference consistency.
 -Scikit-learn
 
 -Joblib
+
+
 
 **📌 Future Improvements**
 
