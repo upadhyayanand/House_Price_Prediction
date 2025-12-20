@@ -138,7 +138,7 @@ Ensures feature order consistency
 
 Produces reliable predictions
 
-###############
+
 
 
 **Run Prediction**
@@ -167,7 +167,6 @@ This guarantees training–inference consistency.
 
 
 
-################
 
 **📊 Why Random Forest Often Wins**
 
@@ -182,7 +181,6 @@ This guarantees training–inference consistency.
 -Linear Regression is still included as a strong baseline model.
 
 
-#################
 
 **🛠️ Tech Stack:**
 ###
@@ -195,7 +193,6 @@ This guarantees training–inference consistency.
 -Joblib
 
 
-##############
 
 **📌 Future Improvements:**
 ###
@@ -210,7 +207,6 @@ This guarantees training–inference consistency.
 -Model monitoring & logging
 
 
-###################
 
 
 **🎯 Interview-Ready Summary:**
