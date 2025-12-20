@@ -5,7 +5,6 @@ This project demonstrates a real-world machine learning pipeline for predicting 
 The pipeline automatically selects the best performing model and applies the correct preprocessing during prediction.
 
 
-##########
 
 
 **🚀 Key Highlights**
@@ -25,7 +24,6 @@ The pipeline automatically selects the best performing model and applies the cor
 -Clean separation of training and prediction logic
 
 
-############
 
 **🧠 Machine Learning Approach**
 
@@ -46,7 +44,6 @@ The pipeline automatically selects the best performing model and applies the cor
 -The model with the highest R² score is automatically selected and saved.
 
 
-#################
 
 **🔧 Feature Engineering:**
 
@@ -61,7 +58,7 @@ The following engineered features are used to capture real-world pricing behavio
 
 -amenities_environment_interaction
 
-###########
+
 
 **Description:**
 
@@ -72,7 +69,6 @@ The following engineered features are used to capture real-world pricing behavio
 -Amenities × Environment score
 
 
-###############
 
 **Why Interaction Features Matter**
 
@@ -82,7 +78,7 @@ The following engineered features are used to capture real-world pricing behavio
 
 -Random Forest models learn such patterns naturally, which is why these features often rank highly in feature importance.
 
-###########
+
 
 **📂 Project Structure**
 
@@ -98,7 +94,7 @@ Housing-Price-Prediction/
 └── requirements.txt
 
 
-#############
+
 
 
 **🏗️ Training Pipeline**
@@ -117,19 +113,17 @@ Evaluate performance
 
 Save the best model with metadata
 
-##########
+
 
 **Run Training:**
 
 python train.py
 
-#########
 
 **This generates:**
 
 best_model.pkl
 
-##########
 
 
 **🔮 Prediction Pipeline**
@@ -149,14 +143,11 @@ Produces reliable predictions
 
 **Run Prediction**
 python predict.py
-
-#########
 Example:
 
 preds = predict_price("./Data/userInput.csv")
 
 
-############################
 
 
 **🧩 Model Metadata (Production-Grade)**
