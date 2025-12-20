@@ -5,7 +5,7 @@ This project demonstrates a real-world machine learning pipeline for predicting 
 The pipeline automatically selects the best performing model and applies the correct preprocessing during prediction.
 
 
-
+##########
 
 
 **🚀 Key Highlights**
@@ -25,7 +25,7 @@ The pipeline automatically selects the best performing model and applies the cor
 -Clean separation of training and prediction logic
 
 
-
+############
 
 **🧠 Machine Learning Approach**
 
@@ -46,14 +46,14 @@ The pipeline automatically selects the best performing model and applies the cor
 -The model with the highest R² score is automatically selected and saved.
 
 
+#################
 
-
-**🔧 Feature Engineering**
+**🔧 Feature Engineering:**
 
 The following engineered features are used to capture real-world pricing behavior:
 
 
-**Feature	**    
+**Feature:**    
 
 -amenities_score	
 
@@ -61,9 +61,9 @@ The following engineered features are used to capture real-world pricing behavio
 
 -amenities_environment_interaction
 
+###########
 
-
-**Description**
+**Description:**
 
 -Sum of parking, AC, and guestroom
 
@@ -72,7 +72,7 @@ The following engineered features are used to capture real-world pricing behavio
 -Amenities × Environment score
 
 
-
+###############
 
 **Why Interaction Features Matter**
 
@@ -82,10 +82,7 @@ The following engineered features are used to capture real-world pricing behavio
 
 -Random Forest models learn such patterns naturally, which is why these features often rank highly in feature importance.
 
-
-
-
-
+###########
 
 **📂 Project Structure**
 
@@ -101,7 +98,7 @@ Housing-Price-Prediction/
 └── requirements.txt
 
 
-
+#############
 
 
 **🏗️ Training Pipeline**
@@ -120,22 +117,19 @@ Evaluate performance
 
 Save the best model with metadata
 
-
-
+##########
 
 **Run Training:**
 
 python train.py
 
-
-
+#########
 
 **This generates:**
 
 best_model.pkl
 
-
-
+##########
 
 
 **🔮 Prediction Pipeline**
@@ -150,20 +144,19 @@ Ensures feature order consistency
 
 Produces reliable predictions
 
-
-
+###############
 
 
 **Run Prediction**
 python predict.py
 
-
+#########
 Example:
 
 preds = predict_price("./Data/userInput.csv")
 
 
-
+############################
 
 
 **🧩 Model Metadata (Production-Grade)**
@@ -183,7 +176,7 @@ This guarantees training–inference consistency.
 
 
 
-
+################
 
 **📊 Why Random Forest Often Wins**
 
@@ -198,38 +191,37 @@ This guarantees training–inference consistency.
 -Linear Regression is still included as a strong baseline model.
 
 
+#################
 
-
-**🛠️ Tech Stack**
-
+**🛠️ Tech Stack:**
+###
 -Python
-
+###
 -Pandas, NumPy
-
+###
 -Scikit-learn
-
+###
 -Joblib
 
 
+##############
 
-
-
-**📌 Future Improvements**
-
+**📌 Future Improvements:**
+###
 -Cross-validation
-
+###
 -Hyperparameter tuning
-
+###
 -Sklearn Pipelines
-
+###
 -FastAPI inference API
-
+###
 -Model monitoring & logging
 
 
+###################
 
 
-
-**🎯 Interview-Ready Summary**
-
+**🎯 Interview-Ready Summary:**
+####
 “This project implements a production-ready ML pipeline that compares linear and tree-based models, selects the best performer automatically, and ensures correct preprocessing during inference using saved metadata.”
